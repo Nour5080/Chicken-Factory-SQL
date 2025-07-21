@@ -42,11 +42,19 @@ The schema models key aspects of a poultry production facility:
 
 ## 📂 File Structure
 
-- `chicken factory inserted.sql`:  
-  Full SQL script with `CREATE TABLE`, `FOREIGN KEYS`, and `INSERT` data
+- `chicken_factory.sql`  
+  Full SQL schema containing only `CREATE DATABASE`, `CREATE TABLE`, and `FOREIGN KEY` constraints (no inserted data).  
+  → Suitable for initializing a clean database structure.
 
-- `chickens_factory.mwb`:  
-  (Optional) MySQL Workbench model if needed for visual ERD design
+- `chicken factory inserted.sql`  
+  Full SQL script including:
+  - Schema creation
+  - Table definitions
+  - Foreign key constraints
+  - **Pre-inserted sample data** (via `INSERT INTO` statements)
+
+- `chickens_factory.mwb`  
+  (Optional) MySQL Workbench model used to design the database schema (ERD format).
 
 ---
 
